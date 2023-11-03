@@ -1,0 +1,15 @@
+ cursor.execute('''CREATE TABLE IF NOT EXISTS conducteur
+                       (id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        nom TEXT,
+                        adresse TEXT,
+                        telephone TEXT,
+                        email TEXT,
+                        date_naissance TEXT,
+                        categorie_permis TEXT,
+                        date_obtention_permis TEXT,
+                        pays_emission_permis TEXT,
+                        responsabilites TEXT,
+                        motivation TEXT,
+                        cv BLOB,
+                        photo_identite BLOB,
+                        copie_permis BLOB)''')

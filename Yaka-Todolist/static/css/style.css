@@ -1,0 +1,183 @@
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+
+}
+
+header {
+background-color: #02c5de;
+color: white;
+padding: 15px 0;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.logo {
+font-size: 24px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.menu li {
+margin-right: 20px;
+}
+
+.menu a {
+text-decoration: none;
+color: white;
+transition: color 0.3s;
+}
+
+.menu a:hover {
+color: #02c5de;
+}
+
+.auth-buttons {
+display: flex;
+align-items: center;
+}
+
+.btn {
+    background-color: white;
+    color: #02c5de;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #008ba3;
+    color: white;
+}
+
+/* menu hamburger */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    }
+.mobile-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #02c5de;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-menu.active {
+display: block;
+}
+
+.mobile-menu li {
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+/* accueil */
+    .image-container {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        max-height: 100%;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #02e1ff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .description-text {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+    background: #00000038;
+    max-width: 80%;
+  }
+    a{
+        text-decoration: none;
+        color: #02c5de;
+    }
+    a:hover{
+        text-decoration: none;
+        color: white;
+    }
+  .btn-en-savoir-plus {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #02c5de;
+    color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .btn-en-savoir-plus:hover {
+    background-color: #008ba3;
+  }
+
+/* Media query pour mon menu hamburger des petits écrans */
+@media screen and (max-width: 768px) {
+.menu {
+display: none;
+}
+
+.auth-buttons {
+display: none;
+}
+
+.hamburger-menu {
+display: flex;
+}
+
+}

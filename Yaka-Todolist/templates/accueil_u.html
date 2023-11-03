@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>accueil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="">Ya-Todolist</a></div>
+            <ul class="menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="{{url_for('tache')}}">Todolist</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn"><a href="{{url_for('deconnexion')}}">Deconnexion</a></button>
+            </div>
+
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Todolist</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="{{url_for('deconnexion')}}">Deconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <div class="image-container">
+        <img style="width: 100%; height: 70%;" src="../static/img/livre-ouvert-cote-lapto.jpg" alt="">
+        <div class="image-text">Bienvenue {{nom}} sur d'ajout de taches</div>
+        <div class="description-text">Découvrez notre plateforme de création de tache la plus simple, rapide et pratique qu'il puisse exister</div>
+        <a href="{{url_for('tache')}}" class="btn-en-savoir-plus">commencer</a>
+    </div>
+
+
+
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

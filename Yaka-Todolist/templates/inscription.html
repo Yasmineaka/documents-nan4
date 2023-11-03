@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/inscription_connexion.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h2><a href="{{url_for('accueil')}}">Ya-Todolist</a></h2>
+            <h4>Inscription</h4>
+            <div class="input-group">
+                <label for=",nom">Nom d'utilisateur</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+            </div>
+            <button type="submit"><a href="{{url_for('connexion')}}">S'inscrire</a></button>
+        </form>
+    </div>
+</body>
+</html>

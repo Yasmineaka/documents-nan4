@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mon Beau Footer</title>
+    <style>
+        /* Styles de base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles du footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin: 10px 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #00bcd4;
+}
+
+.footer-social a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Styles pour les icônes sociales (remplacez les images par vos propres icônes) */
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Votre contenu de page ici -->
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Mon Logo</div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Mon Entreprise. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>
